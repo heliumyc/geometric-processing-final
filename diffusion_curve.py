@@ -16,7 +16,7 @@ class DiffusionCurve:
         return [(int(cx * resolution_x), int(cy * resolution_y)) for cx, cy in self.ctx_points]
 
     def rasterize_color_pts(self, resolution_x, resolution_y) -> [((int, int), (int, int))]:
-        
+        return []
 
     def rasterize(self, resolution_x, resolution_y, frequency=3000):
         self.rasterized_pixels = utils.rasterize_curve(self.ctx_points[0][0], self.ctx_points[0][1],
